@@ -333,7 +333,7 @@ public class GuiSideInventory extends GuiModule {
 */
     // slider
     if(slider.isEnabled()) {
-      slider.update(mouseX, mouseY, !isMouseOverFullSlot(mouseX, mouseY) && isMouseInModule(mouseX, mouseY));
+      slider.update(mouseX, mouseY, isMouseInModule(mouseX, mouseY));
       slider.draw();
 
       updateSlots();
